@@ -1,4 +1,4 @@
-from Singly_LinkedLists import LinkedList
+from data_structures.Singly_LinkedList import LinkedList
 
 
 class LinkedList_hash(LinkedList):
@@ -216,7 +216,7 @@ class hash_table():
         Returns:
             float: The load factor of the hash table.
         """
-        return  len(ht) / self.size
+        return  len(self) / self.size
 
     
     def resize(self, size=None):
